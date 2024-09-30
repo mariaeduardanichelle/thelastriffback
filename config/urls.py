@@ -17,7 +17,6 @@ from rest_framework.routers import DefaultRouter
 
 from thelastriff.views import GuitarraViewSet, PedidoViewSet, ItemPedidoViewSet
 
-from usuario.router import router as usuario_router
 
 from django.conf import settings
 from django.conf.urls.static import static

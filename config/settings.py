@@ -52,7 +52,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_spectacular',
     'thelastriff',
-    'usuario',
     'uploader',
 ]
 
@@ -155,7 +154,6 @@ REST_FRAMEWORK = {
     ],
 }
 
-AUTH_USER_MODEL = "usuario.Usuario"
 
 MEDIA_URL = "/media/"
 MEDIA_ENDPOINT = "/media/"
