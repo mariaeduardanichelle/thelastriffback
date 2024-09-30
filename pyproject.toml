@@ -18,9 +18,10 @@ dependencies = [
     "python-decouple>=3.8",
     "netifaces>=0.11.0",
     "dj-database-url>=2.2.0",
-    "uvicorn>=0.30.6",
+    "uvicorn>=0.31.0",
     "gunicorn>=23.0.0",
 ]
+
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
@@ -33,6 +34,14 @@ build-backend = "pdm.backend"
 [tool.pdm]
 distribution = true
 
+[[tool.pdm.autoexport]]
+filename = "requirements.txt"
+without-hashes = "true"
+
 [tool.pdm.scripts]
-pre_dev = "python ./scripts/set_my_ip.py"
 dev = "python manage.py runserver 0.0.0.0:19003"
+createsuperuser = "python manage.py createsuperuser"
+pre_migrate = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
+test = "python manage.py test"
+

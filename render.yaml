@@ -3,7 +3,7 @@ services:
     name: django-backend
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn config.wsgi:application"
+    startCommand: "python -m gunicorn config.asgi:application -k uvicorn.workers.UvicornWorker"
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: backend.settings
