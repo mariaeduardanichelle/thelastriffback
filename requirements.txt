@@ -22,7 +22,8 @@ pillow==10.4.0
 pyjwt==2.9.0
 python-decouple==3.8
 python-dotenv==1.0.1
-python-magic==0.4.14
+# Remova a linha abaixo
+# python-magic==0.4.14
 pyyaml==6.0.2
 referencing==0.35.1
 rpds-py==0.20.0
