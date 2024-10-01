@@ -12,8 +12,8 @@ dependencies = [
     "djangorestframework-simplejwt>=5.3.1",
     "setuptools>=75.1.0",
     "Pillow>=10.4.0",
-    # Remova a linha abaixo
-    # "python-magic>=0.4.14",
+    # Substitua a linha abaixo
+    "python-magic-bin>=0.4.14",
     "drf-spectacular>=0.27.2",
     "python-dotenv>=1.0.1",
     "python-decouple>=3.8",
@@ -26,6 +26,7 @@ dependencies = [
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
+
 
 [build-system]
 requires = ["pdm-backend"]
